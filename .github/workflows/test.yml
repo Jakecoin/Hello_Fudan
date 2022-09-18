@@ -21,7 +21,7 @@ jobs:
       
       - name: Install dependencies
         run: |
-          sudo bash -c 'echo "nameserver 8.8.8.8" > /etc/resolv.conf'
+          sudo bash -c 'echo "nameserver 192.168.0.1" > /etc/resolv.conf'
           python -m pip install --upgrade pip
           pip install opencv-python==4.5.4.60
           pip install easyocr pillow numpy
